@@ -1,0 +1,24 @@
+Q2.s (in this case a-z, A-Z and 0-9).
+ import re
+s=input("enter string:")
+if(re.search("\W",s)):
+    print("false")
+else:
+    print("true")
+______________________________
+Q1.prints Fibonacci series up to n terms
+ n=int(input("enter number:"))
+a=0;b=1;
+if(n==1):
+    print(a)
+elif(n==2):
+    print(a,b)
+else:
+    i=3
+    print(a);print(b)
+    while(i<=n):
+        c=a+b
+        print(c)
+        a=b;b=c;
+        i+=1
+        

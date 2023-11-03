@@ -1,0 +1,29 @@
+x=set()
+n=int(input("how many in 1st set"))
+for i in range(n):
+    x.add(int(input("enter valueu")))
+    
+y=set()
+n=(int(input("how many for 2nd set")))
+for i in range(n):
+    y.add(int(input("enter values")))
+print("uninon is",x|y)
+print("intersection is",x&y)
+print("difference is",x-y)
+print("symmetric diff is",x^y)
+____________________________________
+#evaluate to zero
+import numpy
+n=int(input("how many number you want"))
+l=list();
+fl=0;
+for i in range(n):
+    l.append(int(input("enter value")))
+a=numpy.array(l)
+for i in a:
+    if(i==0):
+        fl=1
+if(fl==1):
+    print("not evaluate to zereo");
+else:
+    print("evaluate to zero");

@@ -1,0 +1,21 @@
+Q1.of one upper case letter followed by lower case letters from given string
+
+import re
+s=input("enter string:")
+x=re.search("[A-Z]"+"[a-z]",s)
+print(x)
+___________________________________________
+Q2.anonymous function to calculate area of square
+
+l=int(input("enter number"))
+area=lambda l:l*l
+print("area is",area(l))
+__________________________________________
+Q3.position of minimum and maximum elements of a list. 
+
+n=int(input("enter how many number:"))
+l=list()
+for i in range(n):
+    l.append(int(input("enter number:")))
+print(l.index(min(l)))
+print(l.index(max(l)))

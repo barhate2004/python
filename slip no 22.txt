@@ -1,0 +1,24 @@
+Q2.read a text file and display the number of vowels 
+in the file
+ f.open("file name")
+data=f.read()
+v=0
+for i in data:
+    i=i.tolower()
+    if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u'):
+       v+=1
+print(v)
+___________________________________________________________
+Q3. create a nXn matrix and display its attribut
+
+import numpy
+n=int(input("enter no of rows and cols"))
+l=list()
+for i in range(n*n):
+    l.append(int(input("enter data:")))
+a=numpy.array(l).reshape(n,n)
+print(a)
+print(a.shape)
+print(a.ndim)
+print(a.size)
+_________________

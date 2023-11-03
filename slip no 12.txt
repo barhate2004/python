@@ -1,0 +1,27 @@
+Q1.count of occurence
+
+s=raw_input("enter string:")
+d=dict()
+for i in s:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+print(d)
+
+_____________________________________
+Q2.matrix 2 to 10
+
+import numpy as np
+a=np.arange(2,11).reshape(3,3)
+print(a)
+___________________________________________
+Q3.
+ 
+import re
+s=raw_input("enter string")
+ch=input("enter character you want to check")
+if(re.search("^"+ch,s)):
+    print("yess")
+else:
+    print("no")

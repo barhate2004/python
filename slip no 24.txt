@@ -1,0 +1,20 @@
+#Write a NumPy program to get the unique elements of an array
+import numpy
+l1=list()
+l2=list()
+n=int(input("how many values you wnat in the array"))
+for i in range(n):
+    l1.append(int(input("enter value")))
+a=numpy.array(l1)
+for i in l1:
+    if(i not in l2):
+        l2.append(i)
+b=numpy.array(l2)
+print(b)
+_______________________________________
+#average(0-n)
+n=int(input("how many number you want in list"))
+l=list()
+for i in range(n):
+    l.append(int(input("enter number")))
+print("avg is",sum(l)//n);

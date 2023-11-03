@@ -1,0 +1,28 @@
+#Write a Python program to remove duplicate elements from the list
+l=list()
+n=int(input("how many number you want in list"))
+for i in range(n):
+    l.append(int(input("enter data")))
+
+l2=list()
+for i in l:
+    if i not in l2:
+        l2.append(i)
+print(l2)
+______________________________________________________________________________________
+Q2palindrome 
+n=int(input("enter number"))
+m=n
+def reverse(n):
+	rev=0
+	while(n>0):
+		rev=rev*10+(n%10)
+		n=n//10
+	return rev
+ans=reverse(n)
+print "reverse number is",ans
+
+if(ans==m):
+	print "number is palindrome"
+else:
+	print "number is not palindrome"

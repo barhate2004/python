@@ -1,0 +1,20 @@
+#sum all the items in a dictionar
+n=(int(input("how many items add in dictionary")))
+d=dict()
+for i in range(n):
+    k=raw_input("enter key")
+    d[k]=int(input("enter values"))
+    
+print(sum(d.values()));
+________________________________________________
+Q. 1 Write a Python program to search for a literal string in a string and also find the 
+location within the original string where the pattern occurs.
+
+import re
+str=raw_input("enter string");
+ch=raw_input("enter charater to match");
+ans=re.search(ch,str)
+if(ans):
+    print("charater foud at position",ans.start());
+else:
+    print("charater not found");

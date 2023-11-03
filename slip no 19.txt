@@ -1,0 +1,27 @@
+Q1.IndexError exception if the index is out of range
+ 
+ try:
+    l=list()
+    n=int(input("enter how many numbers:"))
+    for i in range(n):
+        l.append(int(input("enter data:")))
+    x=int(input("enter which index value to print:"))
+    print(l[x])
+except IndexError:
+    print("out of bound index entered:")
+except:
+        print("error")
+___________________________________________________________________
+Q2.o display last 5 characters from file
+ 
+ f=open("filename")
+data=f.read()
+print(data[-5: ])
+_________________________________________________
+Q3.a program to reverse a given numbe
+ n=int(input("entr number:"))
+rev=0
+while(n):
+    rev=rev*10+(n%10)
+    n=n//10
+print("reversed number is",rev)

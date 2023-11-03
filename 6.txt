@@ -1,0 +1,16 @@
+#(in this case a-z, A-Z and 0-9).
+import re
+s=input("enter string")
+if(re.search("\W",s)):
+    print("wrong");
+else:
+    print("done");
+
+#replace all spaces in a text file with ‘*’
+f1=f.open("name")
+f2=f.open("newfile",W)
+l=f1.readlines()
+for word in l:
+    if letter==1:
+        f2.write('*')
+    f2.write(letter)

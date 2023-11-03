@@ -1,0 +1,16 @@
+Q3. reverse a given numbers
+ n=int(input("entr number:"))
+rev=0
+while(n):
+    rev=rev*10+(n%10)
+    n=n//10
+print("reversed number is",rev)
+_________________________________________
+Q1.access the value of a key from a dictionary
+ n=int(input("how many values ypu want in dictonary"))
+d=dict()
+for i in range(n):
+    k=input("enter key:")
+    d[k]=int(input("enter values"))
+x=input("enter key find value")
+print(d[x])

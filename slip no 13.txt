@@ -1,0 +1,23 @@
+Q3.'a' follawed by zero or more b
+ 
+import re
+s=input("enter string:")
+if(re.search("a"+"b*",s)):
+    print("yes")
+else:
+    print("no")
+_________________________________________
+Q1.FileNotFoundError exception if the file does not exist.
+
+try:
+    f.open("a1.txt")
+        print(f.read(s))
+except IOError:
+        print("file not found")
+except:
+        print("error")
+else:
+        print("error not found")
+finally:
+        print("done")
+    

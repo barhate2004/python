@@ -1,0 +1,23 @@
+Q1.o create a nXn matrix and display its attribut
+
+import numpy
+n=int(input("enter no of rows and cols"))
+l=list()
+for i in range(n*n):
+    l.append(int(input("enter data:")))
+a=numpy.array(l).reshape(n,n)
+print(a)
+print(a.shape)
+print(a.ndim)
+print(a.size)
+___________________________________________________
+Q3.Sample-List: (8, 2, 3, 1, 7) Expected Output : -336
+
+  n=int(input("how many numbers you want in list:"))
+l=list()
+for i in range(n):
+    l.append(int(input("enter value:")))
+ans=1
+for i in l:
+    ans=ans*i
+print(ans)

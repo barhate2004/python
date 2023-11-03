@@ -1,0 +1,21 @@
+Q2.find length without libriary function
+
+s=input("enter string")
+count=0
+for i in s:
+    count+=1
+print(count)
+
+___________________________________________________
+    
+Q3.set the unique elements of an array
+
+import numpy
+a=numpy.array([1,2,3,4,5,2,4])
+print(a)
+l2=list()
+for i in a:
+    if i not in l2:
+        l2.append(i)
+a2=numpy.array(l2)
+print(a2)

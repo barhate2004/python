@@ -1,0 +1,22 @@
+Q2.Example n=130 then output is 4 (1+3+0)
+
+ n=int(input("enter number:"))
+sum=0
+while(n):
+    sum+=(n%10)
+    n=n//10
+print("sum is",sum)
+______________________________________________
+Q3.given element is present in the given
+tuple
+
+n=int(input("how many elements in tuple"))
+l=list()
+for i in range(n):
+    l.append(int(input("enter number")))
+t=tuple(l)
+x=int(input("enter number to check"))
+if x in t:
+    print("number present in tuple")
+else:
+    print("number is absent")

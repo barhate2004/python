@@ -1,0 +1,20 @@
+Q1.read first n lines from a text file and also read the 
+first n characters
+
+f=open("file name")
+n=int(input("how many lines and character to read from files:"))
+data=f.read(n)
+print("first n character",data)
+data=f.readlines(n)
+print("first n lines are:",data)
+______________________________________________________________
+Q3.calculate the average of numbers in a given List.
+ l=list()
+n=int(input("how many numbers you want to enter in list:"))
+for i in range(1,n+1):
+    l.append(int(input("enter data:")))
+sum1=0
+for i in l:
+    sum1+=i
+avg=sum1/n
+print("avg is",avg)

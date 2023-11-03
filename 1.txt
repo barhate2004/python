@@ -1,0 +1,19 @@
+file not found error
+try:
+    f=f.open("a1.txt")
+    print(f.read(s))
+except IOError:
+    print("file doesnt exist");
+except:
+    print("error");
+else:
+    print("error not found");
+finally:
+        print("done");
+        
+#avg of list        
+n=int(input("how many number you want"))
+l=list()
+for i in range(n):
+    l.append(int(input("enter number")))
+print("average is",sum(l)//n);

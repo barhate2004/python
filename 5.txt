@@ -1,0 +1,7 @@
+ print list after removing ODD numbers.
+n=int(input("how many number you want in list"))
+l=list()
+for i in range(n):
+    l.append(int(input("enter number")))
+ans=filter(lambda n:n%2==0,l)
+print(list(ans));
